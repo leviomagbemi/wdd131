@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-primary: #0000ff;
+  --text-color: #fff;
+}
+
 body {
   font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -13,7 +18,7 @@ img {
 }
 
 a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   display: block;
 }
@@ -23,8 +28,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0000ff;
-  color: #fff;
+  background-color: var(--bg-primary);
+  color: var(--text-color);
 }
 
 #header-logo {
@@ -47,7 +52,7 @@ nav {
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-color);
 }
 
 #menu::before {
@@ -73,8 +78,8 @@ nav {
 }
 
 .nav-list a:hover {
-  background-color: #fff;
-  color: #0000ff;
+  background-color: var(--text-color);
+  color: var(--bg-primary);
   padding: 0.5rem;
   width: 100%;
 }
@@ -103,6 +108,6 @@ section {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #0000ff;
-  color: #fff;
+  background-color: var(--bg-primary);
+  color: var(--text-color);
 }
