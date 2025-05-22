@@ -33,7 +33,7 @@ header {
 }
 
 #header-logo {
-  flex: 1;
+  flex: 3;
 }
 
 #header-logo.logo-hide {
