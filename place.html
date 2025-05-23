@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Page - San Francisco, California</title>
+  <meta name="description" content="This is a page dedicated to San Francisco, California created by Levi Omagbemi. This page contains important information about the city of California such as population, capital, languages, currency and weather information. I love the Golden Gate Bridge in San Francisco California and would like to visit there some day.">
+  <meta name="author" content="Levi Omagbemi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css"> 
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>San Francisco, California</h1>
+  </header>
+  
+  <main>
+    <div class="hero">
+      <picture>
+        <source media="(min-width:1000px)" srcset="images/place-hero-large.webp">
+        <source media="(min-width:500px)" srcset="images/place-hero-medium.webp">
+        <img src="images/place-hero-small.webp" width="500" height="250" alt="Golden Gate Bridge San Francisco California">
+      </picture>
+    </div>
+    <section>
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Data</h2>
+        </div>  
+        <ul>
+          <li><strong>Area:</strong> 423,970 sq km</li>
+          <li><strong>Population:</strong> 39,000,000</li>
+          <li><strong>Capital:</strong> Sacramento</li>
+          <li><strong>Languages:</strong> English</li>
+          <li><strong>Currency:</strong> United States Dollar</li>
+          <li><strong>Time Zone acific Standard Time (PST):</strong> UTC−8</li>
+          <li><strong>Calling Code:</strong> +1</li>
+          <li><strong>Internet TLD:</strong> .us</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Weather</h2>
+        <figure>
+          <img src="images/cloudy-day.svg" alt="Weather icon">
+        </figure>
+        </div>
+        <ul>
+          <li><strong>Temperature:</strong> 10°C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> 5 km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="wind-chill">9.8°C</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="current-year"></span> 🌸 Levi Omagbemi 🌸 Nigeria</p>
+    <p id="last-modified">
+
+    </p>
+  </footer>
+</body>
+</html>
