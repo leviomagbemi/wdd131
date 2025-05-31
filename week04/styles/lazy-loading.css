@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, footer {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  background-color: #000;
+  animation: fade-black 1s;
+}
+
+@keyframes fade-black {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
