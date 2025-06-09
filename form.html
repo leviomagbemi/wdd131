@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form - Product Review Form</title>
+  <meta name="description" content="This is a product review form created by Levi Omagbemi. This form follows the best practices of form designs using the right elements layout patterns to make the form easy for users to use and understand.">
+  <meta name="author" content="Levi Omagbemi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/form-large.css">
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+  <main>
+      <form action="review.html" method="get">
+        <fieldset>
+          <!-- Product Name -->
+          <label> Product Name
+            <select name="product" id="product-name">
+              <option value="" disabled selected>Choose a product ...</option>
+            </select>
+          </label>
+
+          <!-- Rating -->
+          <div class="overallrating-heading">Overall Rating</div>
+
+          <div class="rating">
+            <label> &star;
+              <input type="radio" name="rating" 
+              value="1" id="one-star" required>
+            </label>
+
+            <label> &star; &star;
+              <input type="radio" name="rating" 
+              value="2" id="two-star" required>
+            </label>
+
+            <label> &star; &star; &star;
+              <input type="radio" name="rating" 
+              value="3" id="three-star" required>
+            </label>
+
+            <label> &star; &star; &star; &star;
+              <input type="radio" name="rating" 
+              value="4" id="four-star" required>
+            </label>
+
+            <label> &star; &star; &star; &star; &star;
+              <input type="radio" name="rating" 
+              value="5" id="five-star" required>
+            </label>
+          </div>
+
+          <!-- Installation Date -->
+          <label> Date of Installation
+            <input type="date" name="installationdate" id="install-date" required>
+          </label>
+
+          <!-- Features -->
+          <div class="features-heading">
+            Which features did you find useful in the product? (Check all that apply)
+          </div>
+
+          <div class="product-feature">
+            <label>
+              <input type="checkbox" name="durability" value="durability" id="feature-durability"> Durability
+            </label> 
+
+            <label>
+              <input type="checkbox" name="easeofuse" value="Ease of Use" id="feature-easeofuse"> Ease of Use
+            </label>
+
+            <label>
+              <input type="checkbox" name="perfomance" value="Performance" id="feature-performance"> Performance
+            </label>
+
+            <label>
+              <input type="checkbox" name="design" value="Design" id="feature-design"> Design
+            </label>
+          </div>
+
+          <!-- Review -->
+           <label> Written Review(Optional)
+            <textarea name="review" id="review"></textarea>
+           </label>
+
+           <!-- Name -->
+            <label> Your Name(Optional)
+              <input type="text" name="fullname" id="name">
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Post Review">
+      </form>
+  </main>
+  <footer>
+    <p>&copy;<span id="current-year"></span> 🌸 Levi Omagbemi 🌸 Nigeria</p>
+    <p id="last-modified">
+
+    </p>
+  </footer>
+</body>
+</html>

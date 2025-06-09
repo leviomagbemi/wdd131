@@ -1,0 +1,110 @@
+:root {
+  --primary: #09032d;
+  --secondary: #bdc1e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display";
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+main {
+ padding: 1rem; 
+}
+
+form {
+  padding: 1rem;
+  background-color: var(--secondary);
+  border-radius: 8px;
+}
+
+fieldset {
+  border: none;
+}
+
+input:not(input[type="submit"]), select, textarea {
+  border: none;
+  outline: none;
+}
+
+select, label, input:not(input[type="checkbox"]) {
+  display: block;
+}
+
+select, input:not(input[type="checkbox"], input[type="radio"]) {
+  height: 44px;
+  padding: .5rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  transform: scale(1.5);
+}
+
+input[type="checkbox"] {
+  margin-right: .5rem;
+}
+
+select, textarea, input:not(input[type="checkbox"], input[type="radio"]) {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+label, .overallrating-heading, .features-heading {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: .3rem;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+  padding: .5rem;
+}
+
+input[type="submit"] {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1rem;
+}
+
+.rating {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.rating label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-feature {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
