@@ -1,0 +1,144 @@
+/* Header and Navigation Styling */
+header {
+  border-bottom: solid 2px #000;
+  height: auto;
+}
+
+header .container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#header-logo.logo-hide {
+  display: none;
+}
+
+#header-logo img {
+ width: 50px;
+ border-radius: 50%;
+}
+
+.header-cta {
+  padding: .5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50px;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+
+nav .nav-list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  width: 100%;
+}
+
+nav .nav-list.show-nav-list {
+  display: flex;
+}
+
+nav .nav-list li a {
+  color: var(--secondary-color);
+}
+
+nav .nav-list li a:not(.header-cta):hover {
+  font-weight: 700;
+}
+
+nav .nav-list li a:not(.header-cta):hover::after {
+  content: "";
+  width: inherit;
+  height: 3px;
+  display: block;
+  background-color: var(--primary-color);
+}
+
+#menu {
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  border-radius: 12px;
+}
+
+#menu::before {
+  content: '☰';
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+/* Footer / Contact Section Styling */
+.contact-section .container > p, .contact-section .container h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-section .container .contact-infos {
+  margin-bottom: 1rem;
+}
+
+.contact-section .container .contact-infos .contact-info {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
+} 
+
+.contact-section .container .contact-infos .contact-info h4, .contact-section .container .contact-infos .contact-info a {
+  color: var(--primary-color);
+}
+
+.contact-section .container .business-hours table {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.contact-section .container .business-hours table td {
+  padding: .5rem;
+}
+
+.contact-section .container .business-hours {
+  margin-bottom: 1rem;
+}
+
+.contact-section .container .social-icons img{
+  width: 35px;
+  display: inline-block;
+}
+
+.footer-section {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.footer-section a {
+  display: block;
+  color: var(--primary-color);
+}

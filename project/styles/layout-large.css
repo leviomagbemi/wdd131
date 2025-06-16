@@ -1,0 +1,33 @@
+@media screen and (min-width: 800px) {
+  header {
+    height: 100px;
+  }
+
+  header .container {
+    align-items: center;
+  }
+
+  #header-logo.logo-hide {
+    display: flex;
+  }
+
+  nav {
+    max-width: fit-content;
+  }
+
+  nav .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  footer .contact-section .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+

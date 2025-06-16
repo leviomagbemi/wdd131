@@ -1,0 +1,33 @@
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  /* About Section Styling */
+  .about-section .container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about-section .container .about-content {
+    margin: 0;
+  }
+
+  .portfolio-section .container .portfolio-filtered-result,  .service-section .container .services, .testimonial-section .container .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media  screen and (min-width: 1000px) {
+  .container {
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  .portfolio-section .container .portfolio-filtered-result, .service-section .container .services, .testimonial-section .container .testimonials {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,28 @@
+/* Portfolio Section Styling */
+.portfolio-section .container .portfolio-section-nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.portfolio-section .container .portfolio-section-nav button {
+  padding: .5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  display: block;
+  border-radius: 24px;
+  border: none;
+}
+
+.portfolio-section .container .portfolio-section-nav button.active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.portfolio-section .container .portfolio-filtered-result img {
+  border-radius: 8px;
+}
+

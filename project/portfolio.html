@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GleamsMem Studios - Portfolio</title>
+  <meta name="description" content="At GleamsMem Studios, we pride ourselves on capturing timeless moments that reflect your unique story. Our portfolio showcases a diverse range of professional photography, including elegant studio portraits, heartfelt family and maternity sessions, enchanting weddings, joyful celebrations, and captivating product imagery. Each image embodies our commitment to quality, creativity, and a personal touch that ensures your memories are preserved beautifully.">
+  <meta name="author" content="Levi Omagbemi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/layout-large.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/home-large.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/portfolio.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="header-logo">
+        <img src="images/logo.png" alt="Logo">
+        <div>GleamsMem <br> Studios</div>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="header-cta">Contact Us</a></li>
+        </ul>
+
+        <button id="menu" type="button" aria-label="Toggle navigation menu"></button>
+      </nav>
+
+     
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+       <picture>
+          <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+          <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+          <img src="images/hero-small.webp" alt="Fine art portrait by GleamsMem Studios" width="500" height="750" loading="lazy">
+        </picture>
+      <div class="container">
+          <h1>Welcome to Our Portfolio!!</h1>
+          <a href="contact.html">Book a Session</a>
+      </div>
+    </section>
+    <section class="portfolio-section">
+      <div class="container">
+        <h2>Our Portfolio</h2>
+        <p>Explore our collection of work across different photography genres</p>
+
+        <ul class="portfolio-section-nav">
+          <li class="portfolio-nav-item"><button class="active">All</button></li>
+          <li class="portfolio-nav-item"><button>Weddings</button></li>
+          <li class="portfolio-nav-item"><button>Family</button></li>
+          <li class="portfolio-nav-item"><button>Portrait</button></li>
+          <li class="portfolio-nav-item"><button>Newborn</button></li>
+          <li class="portfolio-nav-item"><button>Maternity</button></li>
+        </ul>
+
+        <div class="portfolio-filtered-result">
+          <!-- Dynamic Content -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="contact-section">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>Ready to book a session or have questions?<br>
+        Contact us today!</p>
+
+        <div class="footer-content">
+          <div class="contact-infos">
+            <h3>Contact Information</h3>
+
+            <div class="contact-info">
+              📍
+              <div>
+                <h4>Location</h4>
+                <p>No. 12 Adjomo Avenue, Airport Road, Warri, Delta State, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              📧
+              <div>
+                <h4>Email Us</h4>
+                <a href="mailto:gleamsmem@gmail.com">gleamsmem@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              📞
+              <div>
+                <h4>Call Us</h4>
+                <a href="tel:+2347042444042">+234 704 244 4042</a>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              📩
+              <div>
+                <h4>Send a Message</h4>
+                <a href="https://wa.link/ae892g" target="_blank">Reach out to us on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="business-hours">
+            <h3>Business Hours</h3>
+
+            <table>
+              <tr>
+                <td>Monday - Friday</td>
+                <td>9 AM - 6 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10 AM - 4 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="social-icons">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com/gleamsmem" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="https://www.instagram.com/gleamsmem/" target="_blank"><img src="images/instagram.png" alt="Instagram logo"></a>
+            <a href="https://www.tiktok.com/@gleamsmem?_t=ZM-8xFmZgTvcPA&_r=1" target="_blank"><img src="images/tik-tok.png" alt="TikTok logo"></a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="footer-section">
+      &copy; 2025 GleamsMem Studios. All rights reserved
+      <a href="image-reference.html" target="_blank">Images Reference</a>
+    </section>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,5 @@
+@media screen and (min-width: 640px) {
+  #form-section .container .form-container {
+    flex-direction: row;
+  }
+}
