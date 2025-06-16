@@ -136,6 +136,7 @@ nav .nav-list li a:not(.header-cta):hover::after {
   background-color: var(--secondary-color);
   color: var(--accent-color);
   text-align: center;
+  padding: 1rem;
 }
 
 .footer-section a {

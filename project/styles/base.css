@@ -43,3 +43,8 @@ section:not(.hero-section) {
 section:not(.footer-section) {
   margin-bottom: 2rem;
 }
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
